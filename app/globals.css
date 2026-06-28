@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-unbounded: sans-serif;
+  --font-montserrat: sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-display: var(--font-unbounded), sans-serif;
+  --font-sans: var(--font-montserrat), sans-serif;
+
+  --color-page: #F3F2EE;
+  --color-surface: #FFFFFF;
+  --color-brand-primary: #C2410C;
+  --color-content-primary: #1F1F21;
+  --color-content-secondary: #52525B;
+  --color-content-muted: #71717A;
+  --color-border-subtle: #E4E4E7;
+
+  --max-width-page: 1200px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility typography-h1 {
+  @apply font-display font-black text-[32px] leading-[1.1] md:text-[48px] md:leading-[1.05] uppercase;
+}
+@utility typography-h2 {
+  @apply font-display font-black text-[22px] leading-[1.15] md:text-[28px] md:leading-[1.1] tracking-[-0.01em] uppercase;
+}
+@utility typography-h3 {
+  @apply font-sans font-extrabold text-[16px] leading-[1.2] md:text-[18px] tracking-[-0.01em] uppercase;
+}
+@utility typography-h4 {
+  @apply font-sans font-semibold text-[14px] leading-[1.25] md:text-[16px];
+}
+@utility typography-body-lead {
+  @apply font-sans font-normal text-[15px] leading-[1.45] md:text-[16px];
+}
+@utility typography-body {
+  @apply font-sans font-normal text-[14px] leading-[1.45] md:leading-[1.50];
+}
+@utility typography-button {
+  @apply font-sans font-bold text-[12px] uppercase;
+}
+@utility typography-metadata {
+  @apply font-sans font-semibold text-[10px] leading-[1.2];
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.rich-text-content p {
+  @apply typography-body text-content-secondary mb-5;
+}
+.rich-text-content p:first-of-type {
+  @apply typography-body-lead text-content-primary mb-6;
+}
+.rich-text-content h2 {
+  @apply typography-h2 mt-10 mb-4 text-content-primary;
+}
+.rich-text-content h3 {
+  @apply typography-h3 mt-8 mb-3 text-content-primary;
+}
+.rich-text-content ul {
+  @apply list-disc list-inside mb-5 pl-2 space-y-2;
+}
+.rich-text-content ol {
+  @apply list-decimal list-inside mb-5 pl-2 space-y-2;
+}
+.rich-text-content li {
+  @apply typography-body text-content-secondary;
+}
+.rich-text-content blockquote {
+  @apply pl-4 p-2 bg-brand-primary/10 border-l-4 border-brand-primary italic my-6 text-content-secondary;
+}
+.rich-text-content strong, .rich-text-content b {
+  @apply font-bold text-content-primary;
+}
+.rich-text-content em {
+  @apply italic text-content-primary;
+}
+.rich-text-content small {
+  @apply typography-body italic text-content-muted;
+}
+.rich-text-content a {
+  @apply text-brand-primary underline underline-offset-4 hover:text-brand-primary/80;
+}
+.rich-text-content img {
+  @apply my-6 max-w-full h-auto;
+}
+.rich-text-content hr {
+  @apply border-t border-border-subtle my-8;
 }
