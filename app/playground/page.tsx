@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import Text from "@/сomponents/Text";
-import Button from "@/сomponents/Button";
-import Navbar from "@/сomponents/Navbar";
+import Text from "@/components/Text";
+import Button from "@/components/Button";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "PRPH UI Playground",
@@ -18,8 +18,7 @@ export default function PlaygroundPage() {
 
   return (
     <>
-      <Navbar />
-      <main className="min-h-screen bg-page py-12 px-6 md:px-12 max-w-6xl mx-auto">
+      <main className="bg-page py-12">
         <header className="border-b border-border-subtle pb-6 mb-12">
           <Text variant="h1" as="h1" className="text-brand-primary mb-2">
             PRPH UI Playground

@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { HeartStraightIcon } from "@phosphor-icons/react/ssr";
-import Text from "@/сomponents/Text";
-import Button from "@/сomponents/Button";
-import Logo from "@/сomponents/Logo";
+import Text from "@/components/Text";
+import Button from "@/components/Button";
+import Logo from "@/components/Logo";
 
 export default function Navbar() {
   return (
     <nav className="w-full h-20 flex items-center justify-center z-50 sticky top-0 bg-page/80 backdrop-blur-md border-b border-border-subtle/50">
-      <div className="w-full max-w-page mx-auto px-6 flex items-center justify-between">
+      <div className="w-full max-w-page mx-auto flex items-center justify-between">
 
         <div className="flex flex-1 gap-4 items-center justify-start">
           <Link href="/">
@@ -20,9 +20,9 @@ export default function Navbar() {
 
         <ul className="flex justify-self-center flex-nowrap">
           <li>
-            <Link href="/chronicle" className="cursor-pointer h-full p-5 transition-colors hover:text-brand-primary">
+            <Link href="/news" className="cursor-pointer h-full p-5 transition-colors hover:text-brand-primary">
               <Text variant="button" as="span">
-                Хроніка
+                Новини
               </Text>
             </Link>
           </li>
