@@ -2,9 +2,10 @@ import Image from "next/image";
 import EventSlider, { SliderData } from "@/components/home/EventSlider";
 import CtaBanner from "@/components/CtaBanner";
 import Button from "@/components/Button";
-import { ArrowRightIcon, RadioButtonIcon } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRightIcon, RadioButtonIcon, CalendarBlankIcon } from "@phosphor-icons/react/dist/ssr";
 import CategoryBlock from "@/components/CategoryBlock";
 import NewsCard, { NewsData } from "@/components/NewsCard";
+import EventCard, {EventData} from "@/components/EventCard";
 
 const MOCK_SLIDES: SliderData[] = [
   {
@@ -57,6 +58,42 @@ const MOCK_NEWS: NewsData[] = [
   }
 ];
 
+const MOCK_EVENTS: EventData[] = [
+  {
+    id: "1",
+    title: "КОНЦЕРТ ГУРТУ АННА ТА СПЕЦІАЛЬНІ ГОСТІ",
+    participants: ["АННА", "0%MERCURY", "SHIP HER SON"],
+    address: "КИЇВ, КЛУБ НА !FESTREPUBLIC",
+    price: "750",
+    date: "26 ЧЕРВНЯ / ПТ",
+    imageSrc: "/images/mock_event_1.jpg",
+    url: "/"
+  },
+  {
+    id: "2",
+    title: "РОЗКВІТ",
+    participants: [
+      "Avenue",
+      "Pale Heaven",
+      "Кожного Дня",
+      "Nonsense's",
+      "G.Inc",
+      "sportcafe",
+      "Haze",
+      "Compass",
+      "Merula",
+      "composexigirl",
+      "rhodobub",
+      "fucking test"
+    ],
+    address: "ЧЕРНІВЦІ, ФАН ПАРК",
+    price: "400/800",
+    date: "27 ЧЕРВНЯ / СБ",
+    imageSrc: "/images/mock_event_2.jpg",
+    url: "/"
+  }
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col pt-10 gap-14">
@@ -84,6 +121,20 @@ export default function Home() {
               <div key={news.id} className="pt-6 pb-6 first:pt-0 last:pb-0">
                 <NewsCard newsData={news} />
               </div>
+            ))}
+          </div>
+        </CategoryBlock>
+      </section>
+
+      <section id="events">
+        <CategoryBlock
+          title="Найближчі події"
+          icon={CalendarBlankIcon}
+          buttonText="Уся афіша подій"
+        >
+          <div className="grid grid-cols-2 gap-6">
+            {MOCK_EVENTS.map((event) => (
+              <EventCard key={event.id} eventData={event} />
             ))}
           </div>
         </CategoryBlock>
