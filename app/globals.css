@@ -16,6 +16,8 @@
   --color-brand-primary: #C2410C;
   --color-content-primary: #1F1F21;
   --color-content-secondary: #52525B;
+  --color-content-tertiary: rgb(31 31 33 / 70%);
+  --color-content-tertiary-light: rgb(255 255 255 / 70%);
   --color-content-muted: #71717A;
   --color-border-subtle: #E4E4E7;
 
