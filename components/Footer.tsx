@@ -9,7 +9,7 @@ import {
   TiktokLogoIcon,
   InstagramLogoIcon,
   EnvelopeSimpleIcon,
-  HeartIcon
+  HeartStraightIcon
 } from "@phosphor-icons/react/dist/ssr";
 
 export default function Footer() {
@@ -103,7 +103,7 @@ export default function Footer() {
                 PRPH Périphérie — це незалежне медіа. Ми існуємо завдяки вашим донатам. Ваша підтримка допомагає нам оплачувати хостинг, гонорари авторам та робити ще більше крутого контенту про українську сцену.
               </Text>
               <Button intent="outline" className="w-full flex items-center justify-center gap-2 cursor-pointer">
-                <HeartIcon weight="fill" className="text-red-600" size={14} />
+                <HeartStraightIcon size={16} weight="fill" className="text-red-500" />
                 Підтримати
               </Button>
             </div>
