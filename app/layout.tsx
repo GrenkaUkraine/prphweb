@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Unbounded, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const unboundedFont = Unbounded({
   variable: "--font-unbounded",
@@ -28,9 +29,12 @@ export default function RootLayout({
       lang="en"
       className={`${unboundedFont.variable} ${montserratFont.variable} h-full antialiased font-sans bg-page text-content-primary`}
     >
-      <body className="min-h-full flex flex-col px-6 md:px-12 max-w-7xl mx-auto">
+      <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}
+        <main className="flex flex-col px-6 md:px-0 max-w-page mx-auto">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
