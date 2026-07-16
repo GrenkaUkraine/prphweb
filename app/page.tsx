@@ -2,10 +2,11 @@ import Image from "next/image";
 import EventSlider, { SliderData } from "@/components/home/EventSlider";
 import CtaBanner from "@/components/CtaBanner";
 import Button from "@/components/Button";
-import { ArrowRightIcon, RadioButtonIcon, CalendarBlankIcon } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRightIcon, RadioButtonIcon, CalendarBlankIcon, BookOpenIcon } from "@phosphor-icons/react/dist/ssr";
 import CategoryBlock from "@/components/CategoryBlock";
 import NewsCard, { NewsData } from "@/components/NewsCard";
 import EventCard, {EventData} from "@/components/EventCard";
+import ArticleCard, {ArticleData} from "@/components/ArticleCard";
 
 const MOCK_SLIDES: SliderData[] = [
   {
@@ -94,6 +95,29 @@ const MOCK_EVENTS: EventData[] = [
   }
 ];
 
+const MOCK_ARTICLES: ArticleData[] = [
+  {
+    id: "1",
+    title: "FAINE MISTO 2026: 15 ГУРТІВ, НА ЯКІ ВАРТО ЗВЕРНУТИ УВАГУ",
+    description: "50 днів залишається до проведення \"Файного Міста\", а окремі категорії квитків уже близькі до солд-ауту. Тож чи варто поспішати купляти свій? Оглядаємо 15 гуртів, які можуть вплинути на ваше рішення.",
+    imageSrc: "/images/mock_article_1.jpg",
+    tags: ["рекомендуємо"],
+    createdAt: "11.06.2026",
+    timeToRead: "15 хв читання",
+    url: "/"
+  },
+  {
+    id: "2",
+    title: "МУЗИКАНТИ У ВІЙСЬКУ: ВІД БРАКУ СНУ ДО ПЛАНІВ НА ДЕМОБІЛІЗАЦІЮ",
+    description: "Чи мають українські музиканти в лавах ЗСУ змогу грати на улюбленому інструменті, чи хочуть творити й де бачать себе після демобілізації — про все це питаємо в них самих.",
+    imageSrc: "/images/mock_article_2.jpg",
+    tags: ["війна", "життя"],
+    createdAt: "23.05.2026",
+    timeToRead: "7 хв читання",
+    url: "/"
+  }
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col pt-10 gap-14">
@@ -135,6 +159,20 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-6">
             {MOCK_EVENTS.map((event) => (
               <EventCard key={event.id} eventData={event} />
+            ))}
+          </div>
+        </CategoryBlock>
+      </section>
+
+      <section id="articles">
+        <CategoryBlock
+          title="Статті"
+          icon={BookOpenIcon}
+          buttonText="Читати всі статті"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {MOCK_ARTICLES.map((article) => (
+              <ArticleCard key={article.id} articleData={article} />
             ))}
           </div>
         </CategoryBlock>
