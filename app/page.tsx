@@ -121,6 +121,7 @@ const MOCK_ARTICLES: ArticleData[] = [
 export default function Home() {
   return (
     <main className="flex flex-col pt-10 gap-14">
+      <h1 className="sr-only">Périphérie — вільний журнал про українську альтернативну та андеграундну музичну сцену</h1>
       <section id="hero" className="flex flex-col gap-6">
         <EventSlider slides={MOCK_SLIDES} />
         <CtaBanner

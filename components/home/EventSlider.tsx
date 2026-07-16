@@ -106,7 +106,7 @@ export default function EventSlider({ slides }: SliderProps) {
                 </div>
 
                 <div className="flex flex-row items-end justify-between gap-12">
-                  <Text variant="h2" className="max-w-[90%] text-white drop-shadow-sm">
+                  <Text variant="h2" as="p" className="max-w-[90%] text-white drop-shadow-sm">
                     {slide.title}
                   </Text>
 
@@ -127,6 +127,7 @@ export default function EventSlider({ slides }: SliderProps) {
 
       <button
         onClick={() => swiperInstance?.slidePrev()}
+        aria-label="Попередній слайд"
         className="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center text-white opacity-50 hover:opacity-100 hover:scale-150 transition-all duration-200 cursor-pointer"
       >
         <CaretLeftIcon size={24} weight="bold" />
@@ -134,6 +135,7 @@ export default function EventSlider({ slides }: SliderProps) {
 
       <button
         onClick={() => swiperInstance?.slideNext()}
+        aria-label="Наступний слайд"
         className="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center text-white opacity-50 hover:opacity-100 hover:scale-150 transition-all duration-200 cursor-pointer"
       >
         <CaretRightIcon size={24} weight="bold" />

@@ -33,7 +33,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
           <div className="flex flex-col gap-4">
-            <Text variant="h4" className="text-surface">
+            <Text variant="h4" as="span" className="text-surface">
               Ми в соцмережах
             </Text>
             <div className="flex flex-col gap-3">
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <Text variant="h4" className="text-surface">Зв&apos;язок з редакцією</Text>
+            <Text variant="h4" as="span" className="text-surface">Зв&apos;язок з редакцією</Text>
             <div className="flex flex-col gap-3">
               <Link href="mailto:contact@prph.media" className="flex items-center gap-2.5 text-content-tertiary-light hover:text-surface transition-colors">
                 <EnvelopeSimpleIcon size={16} weight="fill" />
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <Text variant="h4" className="text-surface">Навігація</Text>
+            <Text variant="h4" as="span" className="text-surface">Навігація</Text>
             <div className="flex flex-col gap-2.5">
               <Link href="/" className="text-content-tertiary-light hover:text-surface transition-colors">
                 <Text variant="body">Головна</Text>
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <Text variant="h4" className="text-surface">Підтримка</Text>
+            <Text variant="h4" as="span" className="text-surface">Підтримка</Text>
             <div className="flex flex-col gap-4">
               <Text variant="body" className="text-content-tertiary-light leading-relaxed">
                 PRPH Périphérie — це незалежне медіа. Ми існуємо завдяки вашим донатам. Ваша підтримка допомагає нам оплачувати хостинг, гонорари авторам та робити ще більше крутого контенту про українську сцену.
