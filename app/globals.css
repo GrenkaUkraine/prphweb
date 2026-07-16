@@ -2,23 +2,18 @@
 @import 'swiper/css';
 @import 'swiper/css/pagination';
 
-:root {
-  --font-unbounded: sans-serif;
-  --font-montserrat: sans-serif;
-}
-
 @theme {
-  --font-display: var(--font-unbounded), sans-serif;
-  --font-sans: var(--font-montserrat), sans-serif;
+  --font-display: var(--font-unbounded, "Unbounded", sans-serif);
+  --font-sans: var(--font-montserrat, "Montserrat", sans-serif);
 
   --color-page: #F3F2EE;
   --color-surface: #FFFFFF;
   --color-brand-primary: #C2410C;
   --color-content-primary: #1F1F21;
   --color-content-secondary: #52525B;
+  --color-content-muted: #71717A;
   --color-content-tertiary: rgb(31 31 33 / 70%);
   --color-content-tertiary-light: rgb(255 255 255 / 70%);
-  --color-content-muted: #71717A;
   --color-border-subtle: #E4E4E7;
 
   --max-width-page: 1200px;
