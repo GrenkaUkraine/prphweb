@@ -1,4 +1,3 @@
-import Image from "next/image";
 import EventSlider, { SliderData } from "@/components/home/EventSlider";
 import CtaBanner from "@/components/CtaBanner";
 import Button from "@/components/Button";
@@ -11,7 +10,7 @@ import ArticleCard, {ArticleData} from "@/components/ArticleCard";
 const MOCK_SLIDES: SliderData[] = [
   {
     id: "1",
-    title: "Мультижанровий музичний фестиваль: Брудний Пес",
+    title: "Мультижанровий музичний фестиваль: Брудний Пес. \n19 Вересня, кіностудія довженка. 18+",
     imageSrc: "/images/mock_1.jpg",
     tagText: "Подія",
     buttonText: "Детально",
@@ -20,7 +19,7 @@ const MOCK_SLIDES: SliderData[] = [
   },
   {
     id: "2",
-    title: "Збір на авто для ЗСУ разом з AutoRIA",
+    title: "Збір на авто для ЗСУ разом з AutoRIA. \nЦіль: 3.000.000 грн",
     imageSrc: "/images/mock_2.png",
     tagText: "Збір",
     buttonText: "Задонатити",

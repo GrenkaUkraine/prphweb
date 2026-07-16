@@ -106,7 +106,7 @@ export default function EventSlider({ slides }: SliderProps) {
                 </div>
 
                 <div className="flex flex-row items-end justify-between gap-12">
-                  <Text variant="h2" as="p" className="max-w-[90%] text-white drop-shadow-sm">
+                  <Text variant="h2" as="p" className="max-w-[90%] text-white drop-shadow-sm whitespace-pre-line">
                     {slide.title}
                   </Text>
 
