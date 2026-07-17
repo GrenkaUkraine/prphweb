@@ -17,6 +17,7 @@
   --color-border-subtle: #E4E4E7;
 
   --max-width-page: 1200px;
+  --spacing-page-inline-mobile: 20px;
 }
 
 @utility typography-h1 {
