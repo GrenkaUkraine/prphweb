@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { HeartStraightIcon } from "@phosphor-icons/react/ssr";
-import Text from "@/components/Text";
-import Button from "@/components/Button";
-import Logo from "@/components/Logo";
+import Text from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
+import Logo from "@/components/common/Logo";
 
 export default function Navbar() {
   return (
@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="w-full max-w-page mx-auto flex items-center justify-between">
 
         <div className="flex flex-1 gap-4 items-center justify-start">
-          <Link href="/">
+          <Link href="/public">
             <Logo className="h-[40px] w-auto" />
           </Link>
           <Text variant="button" className="text-content-muted">—</Text>

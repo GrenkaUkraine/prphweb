@@ -6,9 +6,9 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import Image from 'next/image';
 
-import Text from "@/components/Text";
-import Tag from "@/components/Tag";
-import Button from "@/components/Button";
+import Text from "@/components/ui/Text";
+import Tag from "@/components/ui/Tag";
+import Button from "@/components/ui/Button";
 
 import { ArrowRightIcon, CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";

@@ -1,8 +1,8 @@
-import Logo from "@/components/Logo";
+import Logo from "@/components/common/Logo";
 import Link from "next/link";
 import React from "react";
-import Text from "@/components/Text";
-import Button from "@/components/Button";
+import Text from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
 import {
   ArrowRightIcon,
   TelegramLogoIcon,
@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-page mx-auto px-6 md:px-0 flex flex-col gap-12 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
-            <Link href="/">
+            <Link href="/public">
               <Logo inverted className="h-[40px] w-auto" />
             </Link>
             <Text variant="metadata" className="text-surface max-w-70">
@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Text variant="h4" as="span" className="text-surface">Навігація</Text>
             <div className="flex flex-col gap-2.5">
-              <Link href="/" className="text-content-tertiary-light hover:text-surface transition-colors">
+              <Link href="/public" className="text-content-tertiary-light hover:text-surface transition-colors">
                 <Text variant="body">Головна</Text>
               </Link>
               <Link href="/chronicle" className="text-content-tertiary-light hover:text-surface transition-colors">

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Tag from "@/components/Tag";
-import Text from "@/components/Text";
+import Tag from "@/components/ui/Tag";
+import Text from "@/components/ui/Text";
 
 import Image from "next/image";
 

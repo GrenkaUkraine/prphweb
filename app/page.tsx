@@ -1,11 +1,11 @@
 import EventSlider, { SliderData } from "@/components/home/EventSlider";
-import CtaBanner from "@/components/CtaBanner";
-import Button from "@/components/Button";
+import CtaBanner from "@/components/sections/CtaBanner";
+import Button from "@/components/ui/Button";
 import { ArrowRightIcon, RadioButtonIcon, CalendarBlankIcon, BookOpenIcon } from "@phosphor-icons/react/dist/ssr";
-import CategoryBlock from "@/components/CategoryBlock";
-import NewsCard, { NewsData } from "@/components/NewsCard";
-import EventCard, {EventData} from "@/components/EventCard";
-import ArticleCard, {ArticleData} from "@/components/ArticleCard";
+import CategoryBlock from "@/components/sections/CategoryBlock";
+import NewsCard, { NewsData } from "@/components/cards/NewsCard";
+import EventCard, {EventData} from "@/components/cards/EventCard";
+import ArticleCard, {ArticleData} from "@/components/cards/ArticleCard";
 
 const MOCK_SLIDES: SliderData[] = [
   {

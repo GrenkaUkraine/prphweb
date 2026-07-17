@@ -1,6 +1,6 @@
-import Tag from "@/components/Tag";
+import Tag from "@/components/ui/Tag";
 import {MapPinIcon} from "@phosphor-icons/react/ssr";
-import Text from "@/components/Text";
+import Text from "@/components/ui/Text";
 
 import Image from "next/image";
 import Link from "next/link";

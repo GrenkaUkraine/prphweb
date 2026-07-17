@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
-import Text from "@/components/Text";
-import Button from "@/components/Button";
-import Navbar from "@/components/Navbar";
+import Text from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
 
 export const metadata = {
   title: "PRPH UI Playground",

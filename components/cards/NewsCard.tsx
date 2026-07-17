@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Tag from "@/components/Tag";
-import Text from "@/components/Text";
+import Tag from "@/components/ui/Tag";
+import Text from "@/components/ui/Text";
 import Link from "next/link";
 
 export interface NewsData {

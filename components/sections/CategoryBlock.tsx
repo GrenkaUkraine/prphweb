@@ -1,7 +1,7 @@
 import React from "react";
 
-import Text from "@/components/Text";
-import Button from "@/components/Button";
+import Text from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
 import Link from "next/link";
 import {ArrowRightIcon} from "@phosphor-icons/react/dist/ssr";
 
