@@ -32,7 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         <Navbar />
-        <main className="flex flex-col px-6 md:px-0 max-w-page mx-auto">
+        <main className="flex flex-col max-w-page mx-auto">
           {children}
         </main>
         <Footer />
